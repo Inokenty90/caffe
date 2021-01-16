@@ -19,7 +19,7 @@ set(VOLTA "70 72") # set(VOLTA "70 71 72") # This crashes with CUDA 10
 # Turing (CUDA >= 10)
 set(TURING "75")
 # Ampere (CUDA >= 11)
-set(AMPERE "80 86")
+# set(AMPERE "80 86") # This crashes with CUDA 10
 if (UNIX AND NOT APPLE)
   set(Caffe_known_gpu_archs "${KEPLER} ${MAXWELL} ${PASCAL} ${VOLTA} ${TURING} ${AMPERE}")
   # set(Caffe_known_gpu_archs "${FERMI} ${KEPLER} ${MAXWELL} ${PASCAL} ${VOLTA} ${TURING}")
